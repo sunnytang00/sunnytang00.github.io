@@ -6,23 +6,16 @@ import Drawer from "@mui/material/Drawer";
 import CssBaseline from "@mui/material/CssBaseline";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import List from "@mui/material/List";
-import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import NavComponent from "./navcomponent";
+import List from "@mui/material/List";
 
-const drawerWidth = 160;
+const drawerWidth = 200;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
     ({ theme, open }) => ({
@@ -70,7 +63,23 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 export default function PersistentDrawerLeft() {
-    const navigate = useNavigate();
+    const [pageTitle, setPageTitle] = React.useState("");
+    const path = useLocation().pathname;
+    React.useEffect(() => {
+        switch (path) {
+            case "/":
+                setPageTitle("Home");
+                break;
+            case "/projects":
+                setPageTitle("Projects");
+                break;
+            case "/aboutme":
+                setPageTitle("About Me");
+                break;
+            default:
+                break;
+        }
+    }, [path]);
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
 
@@ -98,8 +107,9 @@ export default function PersistentDrawerLeft() {
                         edge="start"
                         sx={{ mr: 2, ...(open && { display: "none" }) }}
                     >
-                        <MenuIcon />
+                        <MenuIcon autoWidth={false} />
                     </IconButton>
+                    <div>{pageTitle}</div>
                 </Toolbar>
             </AppBar>
             <Drawer
@@ -117,12 +127,15 @@ export default function PersistentDrawerLeft() {
                 PaperProps={{
                     sx: {
                         color: "white",
-                        backgroundColor: "#0b112e"
+                        backgroundColor: "#0b112e",
                     },
                 }}
             >
                 <DrawerHeader>
-                    <IconButton sx={{color: "white"}} onClick={handleDrawerClose}>
+                    <IconButton
+                        sx={{ color: "white" }}
+                        onClick={handleDrawerClose}
+                    >
                         {theme.direction === "ltr" ? (
                             <ChevronLeftIcon />
                         ) : (
@@ -130,11 +143,22 @@ export default function PersistentDrawerLeft() {
                         )}
                     </IconButton>
                 </DrawerHeader>
-                <Divider sx={{backgroundColor: "#1e2b66"}}/>
-                <NavComponent title="Projects" link="/projects" />
-                <Divider sx={{backgroundColor: "#1e2b66"}}/>
-                <NavComponent title="About Me" link="/aboutme" />
-                <Divider sx={{backgroundColor: "#1e2b66"}}/>
+                <List>
+                    <Divider sx={{ backgroundColor: "#1e2b66" }} />
+                    <NavComponent title="Home" link="/" />
+                    <Divider sx={{ backgroundColor: "#1e2b66" }} />
+                    <NavComponent title="Projects" link="/projects" />
+                    <Divider sx={{ backgroundColor: "#1e2b66" }} />
+                    <NavComponent title="About Me" link="/aboutme" />
+                    <Divider sx={{ backgroundColor: "#1e2b66" }} />
+                </List>
+                <List sx={{ marginTop: "auto" }}>
+                    <Divider sx={{ backgroundColor: "#1e2b66" }} />
+                    <NavComponent
+                        sx={{ color: "white", fontWeight: "normal" }}
+                        title="Source Code"
+                    />
+                </List>
             </Drawer>
             <Main open={open}>
                 <DrawerHeader />
