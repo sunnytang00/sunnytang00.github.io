@@ -132,6 +132,7 @@ export default function PersistentDrawerLeft() {
                 }}
             >
                 <DrawerHeader>
+                    <div style={{ marginRight: "8%", fontWeight: "bolder" }}>Navigation</div>
                     <IconButton
                         sx={{ color: "white" }}
                         onClick={handleDrawerClose}
@@ -143,7 +144,7 @@ export default function PersistentDrawerLeft() {
                         )}
                     </IconButton>
                 </DrawerHeader>
-                <List>
+                <List disablePadding>
                     <Divider sx={{ backgroundColor: "#1e2b66" }} />
                     <NavComponent title="Home" link="/" />
                     <Divider sx={{ backgroundColor: "#1e2b66" }} />
