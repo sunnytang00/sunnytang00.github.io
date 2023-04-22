@@ -95,7 +95,7 @@ export default function PersistentDrawerLeft() {
         <Box sx={{ display: "flex" }}>
             <CssBaseline />
             <AppBar
-                sx={{ backgroundColor: "#060a1c" }}
+                sx={{ backgroundColor: "#002B36" }}
                 position="fixed"
                 open={open}
             >
@@ -107,7 +107,7 @@ export default function PersistentDrawerLeft() {
                         edge="start"
                         sx={{ mr: 2, ...(open && { display: "none" }) }}
                     >
-                        <MenuIcon autoWidth={false} />
+                        <MenuIcon />
                     </IconButton>
                     <div>{pageTitle}</div>
                 </Toolbar>
@@ -127,12 +127,12 @@ export default function PersistentDrawerLeft() {
                 PaperProps={{
                     sx: {
                         color: "white",
-                        backgroundColor: "#0b112e",
+                        backgroundColor: "#073642",
                     },
                 }}
             >
                 <DrawerHeader>
-                    <div style={{ marginRight: "8%", fontWeight: "bolder" }}>Navigation</div>
+                    <div style={{ color: "#8dadb3", marginRight: "8%", fontWeight: "bolder" }}>Navigation</div>
                     <IconButton
                         sx={{ color: "white" }}
                         onClick={handleDrawerClose}
@@ -145,16 +145,16 @@ export default function PersistentDrawerLeft() {
                     </IconButton>
                 </DrawerHeader>
                 <List disablePadding>
-                    <Divider sx={{ backgroundColor: "#1e2b66" }} />
+                    <Divider sx={{ backgroundColor: "#6A8084" }} />
                     <NavComponent title="Home" link="/" />
-                    <Divider sx={{ backgroundColor: "#1e2b66" }} />
+                    <Divider sx={{ backgroundColor: "#6A8084" }} />
                     <NavComponent title="Projects" link="/projects" />
-                    <Divider sx={{ backgroundColor: "#1e2b66" }} />
+                    <Divider sx={{ backgroundColor: "#6A8084" }} />
                     <NavComponent title="About Me" link="/aboutme" />
-                    <Divider sx={{ backgroundColor: "#1e2b66" }} />
+                    <Divider sx={{ backgroundColor: "#6A8084" }} />
                 </List>
                 <List sx={{ marginTop: "auto" }}>
-                    <Divider sx={{ backgroundColor: "#1e2b66" }} />
+                    <Divider sx={{ backgroundColor: "#6A8084" }} />
                     <NavComponent
                         sx={{ color: "white", fontWeight: "normal" }}
                         title="Source Code"
