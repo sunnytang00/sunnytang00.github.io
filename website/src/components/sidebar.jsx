@@ -132,7 +132,7 @@ export default function PersistentDrawerLeft() {
                 }}
             >
                 <DrawerHeader>
-                    <div style={{ color: "#8dadb3", marginRight: "8%", fontWeight: "bolder" }}>Navigation</div>
+                    <div style={{ color: "#c1edf5", marginRight: "8%", fontWeight: "bolder" }}>Navigation</div>
                     <IconButton
                         sx={{ color: "white" }}
                         onClick={handleDrawerClose}

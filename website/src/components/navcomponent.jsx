@@ -24,18 +24,18 @@ const NavComponent = ({ title, link }) => {
             >
                 <ListItemIcon>
                     {title === "About Me" && (
-                        <EmojiPeopleIcon sx={{ color: "#6A8084" }} />
+                        <EmojiPeopleIcon sx={{ color: "#c1edf5" }} />
                     )}
-                    {title === "Home" && <HomeIcon sx={{ color: "#6A8084" }} />}
+                    {title === "Home" && <HomeIcon sx={{ color: "#c1edf5" }} />}
                     {title === "Projects" && (
-                        <TerminalIcon sx={{ color: "#6A8084" }} />
+                        <TerminalIcon sx={{ color: "#c1edf5" }} />
                     )}
                     {title === "Source Code" && (
-                        <CodeIcon sx={{ color: "#6A8084" }} />
+                        <CodeIcon sx={{ color: "#c1edf5" }} />
                     )}
                 </ListItemIcon>
                 <ListItemText
-                    sx={{ color: "#8dadb3", fontFamily: "Cascadia Code" }}
+                    sx={{ color: "#c1edf5", fontFamily: "Cascadia Code" }}
                     primary={title}
                 />
             </ListItemButton>
