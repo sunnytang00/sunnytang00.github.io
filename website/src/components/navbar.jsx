@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div
                     style={{
                         display: "flex",
-                        width: "20%",
+                        width: "15%",
                         justifyContent: "space-evenly",
                     }}
                 >
