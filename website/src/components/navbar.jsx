@@ -14,7 +14,6 @@ const Navbar = () => {
                     <Link to="projects">Projects</Link>
                     <Link to="contact">Contact</Link>
                 </nav>
-                <div style={{color: "white"}}>Sunny Tang</div>
                 <div
                     style={{
                         display: "flex",
