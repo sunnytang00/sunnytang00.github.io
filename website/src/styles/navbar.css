@@ -1,0 +1,21 @@
+nav a {
+    text-decoration: none;
+    color: #ededed;
+    transition: .3s;
+    font-weight: 500; 
+    margin-right: 25%;
+}
+
+a:hover {
+    color: #00abf0;
+}
+
+.navbox {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    background-color: #081b29;
+    padding: 20px 5%;
+}
