@@ -3,7 +3,7 @@ import image from "../images/profile.jpg";
 const HomePage = () => {
     return (
         <>
-            <div style={{ backgroundColor: "#081b29", height: "90vh" }}>
+            <div style={{ backgroundColor: "#081b29", height: "95vh" }}>
                 <div style={{ display: "flex", marginLeft: "1%" }}>
                     <div
                         style={{
@@ -30,7 +30,7 @@ const HomePage = () => {
                         style={{
                             width: "30%",
                             marginTop: "6%",
-                            marginLeft: "5%",
+                            marginLeft: "4%",
                         }}
                     ></img>
                 </div>
