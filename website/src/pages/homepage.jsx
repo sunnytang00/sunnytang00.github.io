@@ -19,7 +19,10 @@ const HomePage = () => {
                             I'm currently studying Software Engineering at UNSW
                             and have experience working on projects in both
                             frontend and backend frameworks. I've also written
-                            applications in <strong>C, Rust, Python and JavaScript.</strong>
+                            applications in{" "}
+                            <strong>C, Rust, Python and JavaScript. </strong>
+                            If you'd like to talk with me, please contact me
+                            through my LinkedIn.
                         </p>
                     </div>
                     <img
