@@ -3,7 +3,7 @@ import image from "../images/profile.jpg";
 const HomePage = () => {
     return (
         <>
-            <div style={{ backgroundColor: "#081b29", height: "95vh" }}>
+            <div style={{ backgroundColor: "#081b29", height: "90vh" }}>
                 <div style={{ display: "flex", marginLeft: "1%" }}>
                     <div
                         style={{
@@ -22,7 +22,7 @@ const HomePage = () => {
                             applications in{" "}
                             <strong>C, Rust, Python and JavaScript. </strong>
                             If you'd like to talk with me, please contact me
-                            through my LinkedIn
+                            through my LinkedIn.
                         </p>
                     </div>
                     <img
