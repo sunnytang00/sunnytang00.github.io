@@ -27,7 +27,7 @@ const HomePage = () => {
                         style={{
                             width: "30%",
                             marginTop: "6%",
-                            marginLeft: "6%",
+                            marginLeft: "5%",
                         }}
                     ></img>
                 </div>
