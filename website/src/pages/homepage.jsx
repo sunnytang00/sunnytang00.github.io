@@ -10,17 +10,18 @@ const HomePage = () => {
                             color: "white",
                             margin: "9%",
                             marginLeft: "9%",
-                            width: "33%",
+                            width: "34%",
                         }}
                     >
                         <h1 style={{ fontSize: "56px" }}>Hi, I'm Sunny</h1>
                         <h2 style={{ color: "#00abf0" }}>Software Engineer</h2>
                         <p>
-                            I'm currently studying Software Engineering at UNSW
-                            and have experience working on projects in both
-                            frontend and backend frameworks. I've also written
-                            applications in{" "}
-                            <strong>C, Rust, Python and JavaScript. </strong>
+                            I'm a full-time student at the University of New
+                            South Wales studying Software Engineering and have
+                            experience working on projects with both frontend
+                            and backend frameworks. I've also written
+                            applications in
+                            <strong> C, Rust, Python and JavaScript. </strong>
                             If you'd like to talk with me, please contact me
                             through my LinkedIn.
                         </p>
