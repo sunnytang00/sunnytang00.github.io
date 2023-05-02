@@ -22,7 +22,7 @@ const HomePage = () => {
                             applications in{" "}
                             <strong>C, Rust, Python and JavaScript. </strong>
                             If you'd like to talk with me, please contact me
-                            through my LinkedIn.
+                            through my LinkedIn
                         </p>
                     </div>
                     <img
