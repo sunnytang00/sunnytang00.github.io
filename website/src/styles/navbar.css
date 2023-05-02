@@ -20,3 +20,12 @@ a:hover {
     background-color: #081b29;
     padding: 20px 5%;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #081b29;
+}

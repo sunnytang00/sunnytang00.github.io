@@ -7,39 +7,42 @@ import { SocialIcon } from "react-social-icons";
 const Navbar = () => {
     return (
         <>
-            <div className="navbox">
-                <nav>
-                    <Link to="/">Home</Link>
-                    <Link to="about">About</Link>
-                    <Link to="projects">Projects</Link>
-                    {/* <Link to="contact">Contact</Link> */}
-                </nav>
-                <div
-                    style={{
-                        display: "flex",
-                        width: "15%",
-                        justifyContent: "space-evenly",
-                    }}
-                >
-                    <SocialIcon
+        
+                <div className="navbox">
+                    <nav>
+                        <Link to="/">Home</Link>
+                        <Link to="about">About</Link>
+                        <Link to="projects">Projects</Link>
+                        {/* <Link to="contact">Contact</Link> */}
+                    </nav>
+                    <div
                         style={{
-                            width: "30px",
-                            height: "30px",
-                            color: "white",
+                            display: "flex",
+                            width: "13%",
+                            justifyContent: "space-evenly",
+                            alignItems: "center",
                         }}
-                        url="https://www.linkedin.com/in/sunny-tang-728bb6231/"
-                    />
-                    <a href="https://github.com/sunnytang00"><GitHubIcon
-                        sx={{
-                            color: "white",
-                            height: "30px",
-                            width: "30px",
-                        }}
-                    /></a>
-                    
+                    >
+                        <SocialIcon
+                            style={{
+                                width: "32px",
+                                height: "32px",
+                                color: "white",
+                            }}
+                            url="https://www.linkedin.com/in/sunny-tang-728bb6231/"
+                        />
+                        <a style={{display: "flex", alignItems: "center"}} href="https://github.com/sunnytang00">
+                            <GitHubIcon
+                                sx={{
+                                    color: "white",
+                                    height: "32px",
+                                    width: "32px",
+                                }}
+                            />
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <Outlet />
+                <Outlet />
         </>
     );
 };

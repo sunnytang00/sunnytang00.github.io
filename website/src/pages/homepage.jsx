@@ -3,7 +3,7 @@ import image from "../images/profile.jpg";
 const HomePage = () => {
     return (
         <>
-            <div style={{ backgroundColor: "#081b29", height: "95vh" }}>
+            <div>
                 <div style={{ display: "flex", marginLeft: "1%" }}>
                     <div
                         style={{
