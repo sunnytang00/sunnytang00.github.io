@@ -4,7 +4,7 @@ const HomePage = () => {
     return (
         <>
             <div style={{ backgroundColor: "#081b29", height: "95vh" }}>
-                <div style={{ display: "flex", marginLeft: "2%" }}>
+                <div style={{ display: "flex", marginLeft: "1%" }}>
                     <div
                         style={{
                             color: "white",
