@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../images/profile.jpg";
+import "../styles/homepage.css";
 const HomePage = () => {
     return (
         <>
@@ -13,9 +14,9 @@ const HomePage = () => {
                             width: "34%",
                         }}
                     >
-                        <h1 style={{ fontSize: "56px" }}>Hi, I'm Sunny</h1>
-                        <h2 style={{ color: "#00abf0" }}>Software Engineer</h2>
-                        <p>
+                        <h1 className="animate__animated animate__fadeInLeft" style={{ fontSize: "56px" }}>Hi, I'm Sunny</h1>
+                        <h2 className="animate__animated animate__fadeInLeft animate__delay-1s" style={{ color: "#00abf0" }}>Software Engineer</h2>
+                        <p className="animate__animated animate__fadeInLeft animate__delay-2s">
                             I'm a full-time student at the University of New
                             South Wales studying Software Engineering and have
                             experience working on projects with both frontend
@@ -30,6 +31,7 @@ const HomePage = () => {
                         src={image}
                         style={{
                             width: "30%",
+                            height: "40%",
                             marginTop: "6%",
                             marginLeft: "4%",
                         }}
