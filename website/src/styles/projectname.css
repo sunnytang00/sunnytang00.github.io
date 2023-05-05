@@ -1,0 +1,29 @@
+.projectLink {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+.projectLink span {
+    position: absolute;
+    display: block;
+    background: #fff;
+    transition: transform ease-in-out 0.3s;
+}
+
+.projectLink span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: 50%;
+    transition-delay: 0s;
+}
+
+.projectLink:hover span:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: 50%;
+}

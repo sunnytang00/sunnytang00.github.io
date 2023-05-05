@@ -1,21 +1,7 @@
 .projectName {
-  display: inline-block;
-  width: 40%;
-  margin: 10px;
-  transition: .3s;
-  padding-left: 2%;
-  --border-color: rgb(255, 255, 255);
-  --border-width: 2px;
-  --bottom-distance: 0px; /* you can increase this */
-  background-image: linear-gradient(to bottom, var(--border-color), var(--border-color));
-  background-size: 0% var(--border-width);
-  background-repeat: no-repeat;
   transition: 0.5s;
 }
 
-.fromCenter {
-  background-position: 50% calc(100% - var(--bottom-distance));
-}
 
 .nameContainer:hover > .projectName {
   opacity: 0.3;
@@ -23,8 +9,4 @@
 
 .nameContainer:hover > .projectName:hover {
   opacity: 1;
-}
-
-.projectName:hover {
-  background-size: 100% var(--border-width);
 }
